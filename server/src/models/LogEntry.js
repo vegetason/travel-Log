@@ -1,13 +1,13 @@
 const mongoose=require('mongoose');
 
-const {schema}=mongoose;
+const {Schema}=mongoose;
 
 const requiredNumber={
     type:Number,
     required:true
 }
 
-const logEntrySchema=new schema({
+const logEntrySchema=new Schema({
     title:{
         type:String,
         required:true
